@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>E&TS Calculator</title>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark black">
+        <a class="navbar-brand" href="#"><strong>Engineering & Technical Services</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Reactor Calculator <span class="sr-only">(current)</span></a>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
+    </script>
+    <!-- Main JS -->
+    <script src="./index.js"></script>
+
+    <div class="container" style="width: 20%;">
+        <div class="md-form">
+            <textarea id="temp" class="md-textarea form-control" rows="2"></textarea>
+            <label for="form7">Temprature</label>
+        </div>
+        <div class="md-form">
+            <textarea id="pressure" class="md-textarea form-control" rows="2"></textarea>
+            <label for="form7">Pressure</label>
+        </div>
+        <div class="md-form">
+            <textarea id="interval" class="md-textarea form-control" rows="2"></textarea>
+            <label for="form7">Interval</label>
+        </div>
+        <button id="calc" type="button" class="btn btn-dark">Calculate</button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 id="result" style="text-align: center;">
+        </h1>
+
+
+
+
+</body>
+
+
+<!-- Footer -->
+<footer class="">
+
+    <!-- Author -->
+    <div class="black ufooter text-center py-3">Author: <a href="https://github.com/UltraaaDev">Ulferno
+            (UltraaaDev)</a>
+    </div>
+    <!-- Author -->
+
+</footer>
+<!-- Footer -->
+
+
+
+</html>

@@ -1,0 +1,25 @@
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
+    background-size: cover;
+}
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+body {
+    padding-top: 65px;
+}
+
+.ufooter {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
