@@ -27,10 +27,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Reactor Calculator </a>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Reactor Calculator <span class="sr-only">(current)</span></a>
-                <li class="nav-item">
-                    <a class="nav-link" href="questions.html">Reactor Question Generator</a>
+                    <a class="nav-link" href="questions.html">Reactor Question Generator <span
+                            class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -50,22 +51,18 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js">
     </script>
     <!-- Main JS -->
-    <script src="./index.js"></script>
+    <script src="./questions.js"></script>
 
     <div class="container" style="width: 20%;">
         <div class="md-form">
-            <textarea id="temp" class="md-textarea form-control" rows="2"></textarea>
-            <label for="form7">Temprature</label>
+            <textarea id="min" class="md-textarea form-control" rows="2"></textarea>
+            <label for="form7">Min. Multiplier</label>
         </div>
         <div class="md-form">
-            <textarea id="pressure" class="md-textarea form-control" rows="2"></textarea>
-            <label for="form7">Pressure</label>
+            <textarea id="max" class="md-textarea form-control" rows="2"></textarea>
+            <label for="form7">Max. Multiplier</label>
         </div>
-        <div class="md-form">
-            <textarea id="interval" class="md-textarea form-control" rows="2"></textarea>
-            <label for="form7">Interval</label>
-        </div>
-        <button id="calc" type="button" class="btn btn-dark">Calculate</button>
+        <button id="calc" type="button" class="btn btn-dark">Generate</button>
     </div>
 
     <br>
