@@ -15,12 +15,12 @@ var getAnswer = (psi, degrees, interval) => {
     if (degrees < 0)
         tempOptions = [-5, -2]
     else
-        tempOptions = [5, 25]
+        tempOptions = [8, 40]
 
     for (let i = 0; i < tempOptions.length; i++) {
         var multiplier = degrees / tempOptions[i]
         var currentInterval = interval / multiplier
-        var validMultiplier = currentInterval % 0.5 == 0 && currentInterval >= 5 && currentInterval <= 10
+        var validMultiplier = currentInterval % 0.5 == 0 && currentInterval >= 4 && currentInterval <= 9
 
         if (validMultiplier) {
             possible = true
