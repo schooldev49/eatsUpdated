@@ -2,14 +2,15 @@ var num = function (n) {
     return (n > 0) ? "+" + n : n;
 };
 
-var temps = [-2, -5, 8, 40]
+var temps = [-5,-2, 8, 40]
 var tempvals = [0,1,2,3]
 var rods = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9]
-var rodvals = [0,10,20,30,40,50,60,70,80,90,100]
+var rodvals = ['0%','10%','20%','30%','40%','50%','60%','70%','80%','90%','100%']
 
 var random = (a) => {
     const thepog = Math.floor(Math.random() * a.length)
-    return [thepog,a[Math.floor(Math.random() * a.length)]];
+
+    return [thepog,a[thepog]];
 }
 
 function getRandomInt(min, max) {
@@ -39,7 +40,7 @@ var generateQuestion = (min, max) => {
     }
 
 
-    return `Question:<br>${num(temprature * multiplier)}°C, ${num(pressure * multiplier)} PSI every ${control * multiplier} seconds.<br><br>Answer:<br><b>Temprature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1})`
+    return `Question:<br>${num(temprature * multiplier)}°C, ${num(pressure * multiplier)} PSI every ${control * multiplier} seconds.<br><br>Answer:<br><b>Temperature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1})`
 
 }
 
