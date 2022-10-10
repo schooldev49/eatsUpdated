@@ -2,8 +2,8 @@ var num = function (n) {
     return (n > 0) ? "+" + n : n;
 };
 
-var temps = [-2, -5, 5, 25]
-var rods = [5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10]
+var temps = [-2, -5, 8, 40]
+var rods = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9]
 
 var random = (a) => {
     return a[Math.floor(Math.random() * a.length)];
@@ -22,7 +22,7 @@ var trueFalse = () => {
 var generateQuestion = (min, max) => {
     var temprature = random(temps);
     var control = random(rods);
-    var pressure = trueFalse() ? (temprature === 25 ? 10 : 5) : 0
+    var pressure = trueFalse() ? (temprature === 40 ? 26 : 13) : 0
 
     var multiplier = getRandomInt(min, max);
 
