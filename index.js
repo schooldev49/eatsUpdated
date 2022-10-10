@@ -33,7 +33,7 @@ var getAnswer = (psi, degrees, interval) => {
     if (!possible) {
         return "Impossible question!"
     } else {
-        return `Temprature: ${correctTemp}<br>Interval: ${correctInterval}<br>Psi: ${correctPsi}`
+        return `<b>Temperature:</b> ${correctTemp}<br><b>Interval:</b> ${correctInterval}<br><b>Psi:</b> ${correctPsi}`
     }
 }
 
