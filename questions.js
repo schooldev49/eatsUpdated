@@ -40,7 +40,7 @@ var generateQuestion = (min, max) => {
     }
 
 
-    return `Question:<br>${num(temprature * multiplier)}°C, ${num(pressure * multiplier)} PSI every ${control * multiplier} seconds.<br><br>Answer:<br><b>Temperature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1})`
+    return `Question:<br>every ${control * multiplier} seconds,  ${num(pressure * multiplier)} PSI, ${num(temprature * multiplier)}°C<br><br>Answer:<br><b>Temperature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1})`
 
 }
 
