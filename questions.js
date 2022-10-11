@@ -31,7 +31,7 @@ var generateQuestion = (min, max) => {
     var real1 = tempvals[random1[0]]
     var real2 = rodvals[random2[0]]
     var val1 = trueFalse()
-    var pressure = val1 ? (temprature === 40 ? 26 : 13) : 0
+    var pressure = !val1 ? (temprature === 40 ? 26 : 13) : 0
 
     var multiplier = getRandomInt(min, max);
 
