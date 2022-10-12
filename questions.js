@@ -3,7 +3,7 @@ var num = function (n) {
 };
 
 var temps = [-5,-2, 8, 40]
-var tempvals = [3,2,1,0]
+var tempvals = [0,1,2,3]
 var rods = [4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9]
 var rodvals = ['0%','10%','20%','30%','40%','50%','60%','70%','80%','90%','100%']
 
@@ -16,7 +16,7 @@ var random = (a) => {
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.ceil(Math.random() * (max - min + 1)) + min;
+    return (Math.floor(Math.random() * (max-min + 1) + min))
 }
 
 var trueFalse = () => {
@@ -36,11 +36,15 @@ var generateQuestion = (min, max) => {
     var multiplier = getRandomInt(min, max);
 
     if (multiplier < max) {
-        multiplier = multiplier + trueFalse() ? 0.5 : 0
-    }
+        if (trueFalse()) {
+            multiplier += 0.5
+        } else {
+
+        }
+        }
 
 
-    return `Question:<br>Every ${control * multiplier} seconds,  ${num(pressure * multiplier)} PSI, ${num(temprature * multiplier)}°C<br><br>Answer:<br><b>Temperature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1})`
+    return `Question:<br>${num(temprature * multiplier)}°C, ${num(pressure * multiplier)} PSI every ${control * multiplier} seconds.<br><br>Answer:<br><b>Temperature:</b> ${num(temprature)} (${real1})<br><b>Interval:</b> ${control} (${real2})<br><b>Psi:</b> ${num(pressure)} (${val1}) <br><br>Multiplier: ${multiplier}`
 
 }
 
@@ -52,6 +56,7 @@ var textChange = () => {
         $('#result').html(generateQuestion(Number(min), Number(max)))
     }
 }
+
 
 $('document').ready(() => {
     document.getElementById("calc").onclick = textChange;
